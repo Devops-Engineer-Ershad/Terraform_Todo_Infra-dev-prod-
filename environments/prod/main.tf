@@ -19,7 +19,6 @@ module "rg1" {
   rg_tags     = local.common_tags
 }
 
-
 module "acr" {
   depends_on = [module.rg]
   source     = "../../modules/azurerm_container_registry"
